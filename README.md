@@ -18,5 +18,5 @@ The values for the sensors published via MQTT will not automatically appear in H
 Support may be limited, feel free to amend the script as you like. This is my first script on GitHub ;-)
 
 ## Copyright
-UMR2 is the controller manufactured by the Dutch floor heating company [WTH](https://www.wth.nl/) 
+UMR2 is the controller manufactured by the Dutch floor heating company [WTH](https://www.wth.nl/).
 I did not deconstruct any of the software on the UMR2, merely looked at the published webpage.
