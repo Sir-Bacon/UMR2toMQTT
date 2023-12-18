@@ -1,7 +1,7 @@
 # UMR2toMQTT
 Python routine to read out UMR2 floorheating controller and publish values to MQTT.
 
-I created this routine to routinely readout my new WTH UMR2 floorheater control unit and publish variables via MWTT to my Home Assistant. The UMR2 controller publishes its status on a webpage via a json element. This routine calls the json and parses it to select specific parameters for publication. It also calculates the difference between the temperature floor in and floor out.
+I created this routine to routinely readout my new WTH UMR2 floorheater control unit and publish variables via MQTT to my Home Assistant. The UMR2 controller publishes its status on a webpage via a json element. This routine calls the json and parses it to select specific parameters for publication. It also calculates the difference between the temperature floor in and floor out.
 
 ## Before use
 Run the script 'UMR2toJSON' 1 time to identify the parameters you want publish on MQTT. Remember to first correct the IP-address of your UMR2 in the script. Use current values on the UMR2 status webpage to check values.
