@@ -1,0 +1,28 @@
+mqtt:
+  sensor:
+    - name: "Vloerverwarming Modus"
+      state_topic: "Vloerverwarming"
+      value_template: "{{ value_json.Mode }}"
+    - name: "Vloerverwarming Pomp"
+      state_topic: "Vloerverwarming"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.Pomp }}"
+    - name: "Vloerverwarming Klep"
+      state_topic: "Vloerverwarming"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.Klep }}"
+    - name: "Vloerverwarming Temperatuur In"
+      state_topic: "Vloerverwarming"
+      value_template: "{{ value_json.Tsupply }}"
+      suggested_display_precision: 1
+      unit_of_measurement: "°C"
+    - name: "Vloerverwarming Temperatuur Uit"
+      state_topic: "Vloerverwarming"
+      value_template: "{{ value_json.Treturn }}"
+      suggested_display_precision: 1
+      unit_of_measurement: "°C"
+    - name: "Vloerverwarming Temperatuur Verschil"
+      state_topic: "Vloerverwarming"
+      value_template: "{{ value_json.DeltaT }}"
+      suggested_display_precision: 1
+      unit_of_measurement: "°C"
